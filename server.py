@@ -23,8 +23,7 @@ def get_response():
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": message}],
     )
-    response = completion["choices"][0]["message"]["content"]
-    return response
+    return completion["choices"][0]["message"]["content"]
 
 
 if __name__ == "__main__":
